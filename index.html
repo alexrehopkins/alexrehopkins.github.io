@@ -1,7 +1,477 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+    <div id="intro">
+      <h2>Hey, yo<a>u</a></h2>
+      <h2>I'm Ale<a>x</a></h2>
+      <h2>and I t<a>u</a>rn complex problems into</h2> 
+      <h2>satisfy<a>i</a>ng design solutions.</h2>
+    </div>
+    
+    <div id="scroller">
+      <a href="#Projects"><span></span>Check out my previous projects
+        <div></div>
+        <span class="material-symbols-outlined">arrow_downward</span>
+      </a>
+    </div>
+    
+    <div id="pagebreak"></div>
+    
+    <section id="Projects" class="Container">
+      <div style="padding-top: 5%;"></div>
+      <h3>What I've worked on</h3>
+      <div class="ProjCard" onclick="openModal('P1')">Rethinking Delivery & Design Ops - Dyson</div>
+      <div class="ProjCard" onclick="openModal('P2')">Digital Innovation - Dyson discovery team</div>
+      <div class="ProjCard" onclick="openModal('P3')">Dyson OnTrac - MyDyson</div>
+      <div class="ProjCard" onclick="openModal('P4')">Dyson Zone - Dyson Link</div>
+      <div class="ProjCard" onclick="openModal('P5')">Digital upscaling - The Big Sleep Company</div>
+      <div class="ProjCard" onclick="openModal('P6')">The Burning Reef - Digital Media (BSc) final project</div>
+      <div class="ProjCard" onclick="openModal('P7')">Panacea AudioVisual experience - Prevail 2021</div>
+      <div class="ProjCard" onclick="openModal('P8')">Critical Eye education tool - ICVL</div>
+      <div class="ProjCard" onclick="openModal('P9')">SAM-APP for Anxiety - CodeWest</div>
+      <!-- Add more ProjCards with unique modals -->
+    </section>
+    
+    <div style="padding-top: 5%;"></div>
+    
+    <section id="Me" class="Container">
+      <h3>Who I am</h3>
+      <p>I'm a Senior Experience Designer at Dyson. I've got 5 years of experience in design.</p>
+      <p>I'm a graduate from University of the West of England (UWE) with a BSc in Digital Media.</p>
+      <p>I'm a relentless creative, easily inspired, and strive to find simplicity in the chaos.</p>
+      <p>I'm a writer and an arist. Check out my instagram</p>
+      <p>And recently I've found I love modern board games; I feel they represent an incredible culmination of so many design principles. Striving to keep components intuitive, tactile and minimal, while enabling a complex decision space all, and all while keeping the users core experience the goal of the product.</p>
+      <h3>Where to find me</h3>
+      <p>If you've got an interesting opportunity or want to bounce ideas, find me on LinkedIn at <a>linkedin.com/in/ahop/</a>.</p>
+    </section>
+
+    <div style="padding-top: 5%;"></div>
+
+    <!-- DesignOps -->
+    <div id="P1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P1')">&times;</span>
+        <h1>Rethinking Delivery in Dyson - Design Ops</h1>
+        <h3>Situation</h3>
+        <p>The Dyson Connectivity Experience Design team was facing growing inefficiencies in its design workflow due to the fast growth of the team that was not supported with effective design operations.
+          This resulted in missed deadlines, inconsistent design quality, and poor collaboration - especially when globally collaborating across time zones where every moment counts.
+          </p>
+          <p>As a result of this the Design Ops collective was established with the task of identifying a more efficient design process to improve team productivity, consistency, and collaboration.
+          </p>
+          <h3>Objective</h3>
+          <p>To orchestrate the streamlining of our design process, and to optimise collaboration to amplify the design team's value and impact. This can be summed up in 3 key areas.
+          </p>
+          <ul>
+            <li>How we work together</li>
+            <li>How we get work done</li>
+            <li>How our work creates impact</li>
+          </ul>
+
+          <h2>Step 1: Audit current processes.</h2>
+          <p><b>Research: </b>We conducted a comprehensive audit of the tools being used across the design and development teams. This involved surveying key stakeholders (designers, developers, product managers) to understand pain points. After running a workshop to collate feedback, the themes discovered were around.
+          </p>
+          <p><b>Fragmented Design Tools: </b>The design team had recently moved from Sketch to Figma, which led to inconsistency and skill gaps in the team. There were also areas designers were keen to upskill in such as animation and motion graphics.
+          </p>
+          <p><b>Onboarding new colleagues: </b>The design team tripled in size to over 50 to fit the expanding range of connected products across multiple international offices - but the lack of onboarding led to inconsistent processes.
+          </p>
+          <p><b>Inefficient Collaboration: </b>The handoff between designers and developers was time-consuming, leading to delays and miscommunications. Mostly in part due to an unclear definition of done for design work between innovation and delivery teams.
+          </p>
+          <p><b>Lack of Documentation: </b>The design team lacked proper documentation of design decisions, user research insights, and design guidelines, which led to misaligned and uninformed design choices.
+          </p>
+          <p><b>Collaboration Silos: </b>UX, product, and engineering teams were working in silos and critically not agile, which lead to misaligned goals, poor communication and duplication of work.
+          </p>
+          <p><b>Outcome: </b>This enabled us to get buy-in from the senior team and identify key areas of improvement and divide and conquer, the following steps are ones I’ve been directly involved in but there were other areas such as integrating the design system.
+          </p>
+            <h2>Step 2: Rethinking our definition of done.</h2>
+          <p><b>Solution: </b>Set up weekly design reviews that included not only designers but also product managers and developers. These reviews created a feedback loop early in the design process, reducing last-minute changes and identifying areas needed for a design to be considered ‘dev-ready’.
+          </p>
+            <p><b>Process: </b>Aligning the areas required for a design to be considered ‘dev-ready’ with other teams and building a Figma template with areas and guidance for every element that is required for delivery.
+          </p>
+            <p><b>Outcome: </b>This improved collaboration and cross-team alignment, and highlighted other areas for attention such as accessibility documentation for voice over and colour blindness.
+          </p>
+          <h2>Step 3: Standardising design documents; data tracking.</h2>
+          </p>
+          <p><b>Solution: </b>While standardising design documentation, data tracking was a key area for improvement to help enable the data science team to align tracking requirements.
+          </p>
+          <p><b>Process: </b>Collaborating with the data science team on what parameters were necessary on a handover document for development, and creating an easily understood and adaptable figma component for all designers to easily import and use which makes it clear what type of tracking is required and what it tracks.
+          </p>
+          <p><b>Outcome: </b>Data tracking documentation on design files across teams has increased by ~80% with many overall awareness of data tracking increasing, and an improvement to the overall alignment of tracked data.
+          </p>
+          <h2>Step 4: Animation and motion design workflow</h2>
+          <p><b>Solution: </b>Document current workflow for animation, outlining the process, risks and business benefits.
+          </p>
+          <p><b>Process: </b>Onboarded multiple team members in each office location onto the animation process, to create a squad of animation advocates in the team. Then I presented to the wider team the benefits of animation, how to get started and how the current instance of animation for the Dyson Zone benefited the app experience.
+          </p>
+          <p>An overview of the presentation can be found below.</p>
+          
+          <h3>Why use Lottie animation:</h3>
+          Animation is proven to drive engagement and retention while making the app appear more dynamic, interactive and responsive. It also enables assets to be scalable and lightweight.
+           
+          <p>We should use Lottie animations in Dyson to build:</p>
+          <ul>
+            <li><b>Usability; </b>to improve feedback and user understanding. </li>
+            <li><b>Delight; </b>build emotional connection with users.</li>
+          </ul>
+          
+          <h3>Things to watch out for:</h3>
+          <ul>
+            <li>What are the goals of the animation, is it necessary?</li>
+            <li>How will we measure the success of the animation?</li>
+            <li>What is the benefit of spending time and resource animating?</li>
+            <li>Has the animation concept been validated?</li>
+            <li>Is the animation able to be delivered?</li>
+          </ul>
+
+          <h3>Process:</h3>
+          <ul>
+            <li>Storyboarding</li>
+            <li>Asset generation / gathering</li>
+            <li>Importing into After Effects</li>
+            <li>Animation using keyframing.</li>
+            <li>Enhancing with graph editor and animation principles.</li>
+            <li>Exporting animation with BodyMovin plugin.</li>
+            <li>Test and handover asset files to the development team.</li>
+          </ul>
+          
+          <b>Outcome: </b>The amount of animations in the MyDyson app have increased from being present on only the Dyson Zone’s connected app experience, to being present on 4 different product app experiences across haircare and floorcare (+300%). The animation skillset is growing now with currently 7 designers spanning all offices now able to animate compared to the initial 2 designers based originally only in the UK (+250% in animation proficiency in the team).</p>
+      </div>
+    </div>
+
+    <!-- Innovation -->
+    <div id="P2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P2')">&times;</span>
+        <h1>Digital Innovation - Dyson discovery team</h1>
+        <h3>Objective</h3>
+        <p>To identify emerging business and technological opportunities in the audio space to ensure the future range plan is both competitive and cutting edge.</p>
+        <h2>Step 1: Gather requirements</h2>
+        <p><b>Goal:</b> To ensure any features and products designed fulfil both the users needs and the business needs.</p>
+        <p><b>Process:</b> This began with stakeholder alignment with the business unit leads and the product managers to negotiate a set of requirements and form a working relationship. The other key stakeholders were with the engineering team to help understand the technical constraints and any functional requirements of the app in order to effectively support the product.
+        </p>
+        <p>At the same time, I launched into user research. For existing features we were able to interview and survey with a wide selection of external participants using UserTesting & UserZoom to better identify pain points in usage of competitor product features. For secret features we leveraged internal employees who best fit the target demographic and personas.</p>
+        <p><b>Outcome:</b> By building a set of requirements, we were able to start creating user stories and business stories that covered the requirements and get them signed off with our product manager and the global business unit.</p>
+        <h2>Step 2: Design & Prototype</h2>
+        <p><b>Planning: </b>At this stage we were able to start to build a feature set with the Product management team that fulfilled the requirements we had defined. The product management team then prioritised the feature set by comparing features with competitor products, cost to deliver and benefit.</p>
+        <p><b>Outcome: </b> At this point I was able to begin the low fidelity and conceptual design phase, which I am unfortunately unable to show due to the secrecy around the innovation team.</p>
+        <h2>Step 3: Validation</h2>
+        <p><b>Research: </b>When I proposed the initial designs, I looked to validate them using usability trials and interviews. These were enabled by the prototypes created in Figma or with the help of software engineers in our team to create a proof of concept for testing.</p>
+        <p><b>Process: </b>By having participants tap through a prototype, we were able to identify key areas of improvement, of these areas we were able to adjust and retest them until they were fully validated and we had insights to inform our designs.</p>
+        <p>The key insights included:</p>
+        <ul>
+          <li><b>Time is critical</b> - Users did not want to spend more than 5 minutes during product set-up.</li>
+          <li><b>Motivation</b> - Users would be willing to spend time setting up app features initially if it enhanced their product experience, or helped reduce time manually fine tuning or fixing problems.</li>
+        </ul>
+        <p>The prototype also provided a good discussion piece to share with development teams to de-risk the proposal.</p>
+        <p><b>Outcome: </b>A comprehensive review of the feature designs with interactive prototypes or technical proof of concepts with senior stakeholders in the Dyson Leadership Group. This is an opportunity to gather final feedback to make any necessary refinements or actions for the delivery team.</p>
+        <h2>Step 4: Review and Delivery</h2>
+        <p><b>Challenge: </b>In this review one of the key features that was proposed was criticised for not being enough of a differentiator, and needing to be more unique in how the data and feature was visually presented.</p>
+        <p>This raised several challenges including:</p>
+        <ul>
+          <li><b>Interpretability: </b>The visualisation would require tweaking and additional information in order to be both glanceably interpretable due to its abstract form, which contrasted the usual data graphs.</li>
+          <li><b>Implementation: </b>The visualisation would have several implementation challenges, due to the desired format of the visualisation being shared being more 3 dimensional than anything that would be achievable with any standard platform or design system components.</li>
+        </ul>
+        <p><b>Solution: </b>There were a few directions the desired concept could be achieved. Either with a 3D model that would be rendered in-app, or creating the visual programmatically with code. I used my experience with Procedural graphics generation and 3D modelling to explore both options, and after reviewing both decided to use the procedural generated 3D graphics using shaders and GLSL code. From collaborating with the App team, we realised we were able to render this on both mobile platforms with the use of Metal and GL.</p>
+        <p><b>Outcome: </b>A dynamically rendered shader could display the data within the app for the future feature. By creating it as a shader it could operate as a module that the delivery team could adopt easily without too much refactoring and rewriting, which in turn removes a lot of the risk associated with the feature. Onboarding prompts are used to teach users about the feature.</p>
+      </div>
+    </div>
+
+    <!-- Ontrac -->
+    <div id="P3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P3')">&times;</span>
+        <h1>Dyson OnTrac - MyDyson app</h1>
+        <h3>Objective</h3>
+        <p>Propose and deliver the app experience for the second generation dyson headphones within the accelerated launch timeline while rolling out the connected product design system MyDyson experience.</p>
+        <h2>Step 1: Research and requirements</h2>
+        <p><b>Research:</b> Data gathering with the data science team on the Dyson Zone launch to understand areas of attrition and identify usability issues and successes.</p>
+        <p>Key areas include: </p>
+        <ul>
+          <li>Users did not interact with location based air quality data.</li>
+          <li>Users were confused with noise cancellation iconography and relied on the drilldown menu.</li>
+          <li>Users struggled with the connection journey, particularly on iOS where there are two types of bluetooth connection that need to be established for full connected functionality. (BLE and BT classic)</li>
+          <li>There were more speculative issues, by looking at online reviews. But these were uncertain due to the small sample size and the fact that some areas including product settings did not have tracking built in.</li>
+        </ul>
+        <p><b>Requirements:</b> To provide an app experience that enables the launch of the Dyson OnTrac product it needs to fulfil:</p>
+        <p>User needs: </p>
+        <ul>
+          <li>Be able to control headphone noise cancellation & equaliser functions.</li>
+          <li>Be able to manage key settings such as head detection.</li>
+          <li>Be able to see product status and troubleshoot any faults or issues.</li>
+          <li>Be able to onboard key product features.</li>
+        </ul>
+        <p>Business needs: </p>
+        <ul>
+          <li>Encourage users to install MyDyson app, and prompt continued use after set-up.</li>
+          <li>Encourage sales of spares and accessories, and other Dyson products where possible.</li>
+          <li>Help establish Dyson’s position in the headphone market segment.</li>
+          <li>MVP app delivered by Q3 2024, to fit with the connected range plan.</li>
+          <li>Align the app experience with the rest of the MyDyson app range.</li>
+        </ul>
+        <h2>Step 2: Delivery plan</h2>
+        <p><b>Proposition: </b>To reduce the risk of delaying the app launch and align to the tight roadmap, I mocked up a hybrid app interface that reuses elements from the Dyson Zone app experience due to sharing many of the same features as the Dyson Zone.</p>
+        <p>Only the core screens would adopt the new design system including the onboarding/set-up screens, shop page, support and landing pages. Core screens were identified by reviewing the data tracking to discover what screens were most visited. The secondary screens like Noise Cancelling, Equaliser, sound data and settings screens reused the legacy components from the Dyson Zone app. This allowed them to be easily updated in isolation post launch while keeping the rest of the experience consistent with the rest of the Dyson range in the design system.</p>
+        <p><b>Estimation:</b> I then brought this proposal to the app team managers and leads to get an estimate on the proposal, and get an idea of its feasibility to slot into the delivery roadmap. The developers that I worked with on the original Dyson Zone app originally were able to give a loose sizing to the proposition. However, due to priorities, the team that would be picking this up would be a newly raised team, which would likely stretch the time estimations.</p>
+        <p><b>Review:</b> To manage stakeholder expectations, this proposition and the launch featureset had to be presented to the senior leadership team including Jake Dyson. After I had got the proposition signed off it was able to be planned into the app roadmap.</p>
+        <h2>Step 3: Development & Design System</h2>
+        <p><b>Agile:</b> To kickstart development, I joined the new development team in Poland to form a multi-disciplinary scrum team and onboard them onto the proposed experience and the current MyDyson experience.</p>
+        <p>By working agile, it enabled the team to identify edge cases, faults and issues quickly, and then be able to generate new design solutions for development quickly. </p>
+        <p>Key issues included:</p>
+        <ul>
+          <li>Aligning legacy component colours and styling to new design system guidelines.</li>
+          <li>Rectifying data tracking in reused components.</li>
+          <li>Covering edge-cases and  product specific faults that were not present before.</li>
+          <li>Adapting Dyson Zone screens that were reused for use with Dyson OnTrac.</li>
+        </ul>
+        <p><b>Alignment:</b> To keep the Dyson Ontrac as in-line as possible with the rest of the MyDyson platform, it was necessary to use Design system components wherever possible, and propose new components to the design system team where existing ones did not fit the requirements.</p>
+        <p>The main experiences that could be adopted and reworked included customer support pages, account pages and the e-commerce page. These required new content to be aligned to the existing flow, but allowed the team to minimise the risk and delivery time.</p>
+        <p><b>New component patterns: </b>It was necessary to define new patterns and specifications for components more relevant to connected products. As a result of this, it was necessary to design and propose a scalable solution that could be reused across other products such as the purifiers.</p>
+        <p>This included:</p>
+        <ul>
+          <li>Segmented button controls</li>
+          <li>Alerts for fault states</li>
+          <li>Connection and Product status</li>
+          <li>Generic troubleshooting journeys</li>
+        </ul>
+        <p><b>Scalability:</b> To ensure the solutions were scalable and could be adopted by other products, we launched a series of workshops with the design team to gather all the existing legacy systems and identify where a component pattern could fulfil all the scenarios and what scenarios would require bespoke solutions.</p>
+        <h2>Step 4: Trial & Launch</h2>
+        <p><b>Test: </b>Using the development prototype, we were able to trial and test the interface with a pool of internal Dyson employees. Steps were made to ensure participants were bluetooth headphone users and were not part of product launch so could experience the app without any preconceptions. Also, ensuring that none of the participants were UX practitioners so that we could keep feedback more authentic and less opinionated.</p>
+        <p>Key findings included: </p>
+        <ul>
+          <li>15 usability errors, with 3 critical errors. These included areas of readability, and graph interpretability.</li>
+          <li>Participants were impressed with the amount of information available in the headphones app.</li>
+          <li>Participants did not expect product-related settings under the global app cog menu.</li>
+          <li>Copy for the alerts was misleading.</li>
+          <li>The middle tabs were not obviously scrollable, leading to some tabs being missed.</li>
+          <li>Participants expected media controls on the app page.</li>
+          <li>Participants found the recalibration process frustrating and confusing.</li>
+          <li>The noise cancelling options provided were not entirely clear and differentiated.</li>
+          <li>Participants felt that the Dyson OnTrac interface was a significant improvement over the current Dyson Zone app experience.</li>
+        </ul>
+        <p><b>Delivery:</b> There was a short opportunity of improving the experience before launch, and we prioritised the most critical feedback from the trial in driving these improvements that also had low development impact such as styling and copy for key features like the graphs. This was done by working agile in a multi-disciplinary scrum team where we could collaborate and quickly understand what was achievable in the final few sprints, while adding to the backlog for post launch improvements.</p>
+        <p><b>Outcome:</b> The app experience was successfully launched alongside the product launch, and received glowing reviews online. On average ~12% of reviews mentioned the connected experience positively, as opposed to the ~2% that the Dyson Zone had.</p>
+      </div>
+    </div>
+
+    <!-- Zone -->
+    <div id="P4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P4')">&times;</span>
+        <h1>Dyson Zone - Dyson Link app</h1>
+        <h3>Objective</h3>
+        <p>Delivering the connected experience for the first Dyson headphones, and iterating upon it with post launch improvements.</p>
+        <h2>Step 1: Design</h2>
+        <p><b>Deep dive: </b>As a result of the product development framework, the product has been in development for some time now and the key concept and vision of the experience has already been explored, reviewed and signed off with Senior Stakeholders.</p>
+        <p>In order to fully understand the proposed experience I was to refine and deliver I set out to define the current information architecture and where the key user journeys were.</p>
+        <p><b>Information architecture: </b></p>
+        <p>This highlighted areas that needed further design work, including much of the set-up journey and the help screens. By collaborating with the development team it was possible to identify each of the steps necessary for a successful connection and some of the anticipated failure paths such as when the product is not discovered, or if the connection fails.</p>
+        <h2>Step 2: Trial & Audit</h2>
+        <p><b>Prototype: </b>To effectively trial the experience and gain insights on the experience, it was necessary to prototype the user interface. This would allow participants to tap through the screens while setting up the headphones for a more authentic and realistic product set-up journey and exploration of the key features.</p>
+        <p>The goals of the trials were:</p>
+        <ul>
+          <li>Validating the user experience of the controls.</li>
+          <li>Verifying the user interpretability of the graphs.</li>
+          <li>Discovering if users are able to fully connect and set-up the product with the in-app set-up journey.</li>
+          <li>Identifying potential faults and issues with the current experience.</li>
+        </ul>
+        <p><b>Internal trial: </b>I began with running an internal trial within the office with the use of a pre-production Dyson Zone and the prototype. There were 6 participants given the task of successfully setting up the headphones, who all had experience of using headphones but who had not had any personal experience with the Dyson Zone.</p>
+        <p>Key findings:</p>
+        <ul>
+          <li>During set-up there was confusion with the two part bluetooth connection</li>
+          <li>During set-up there was difficulty setting up the visor correctly, due to putting headphones not backwards, and difficulty with the magnetic connection</li>
+        </ul>
+        <p>Based on these key findings, it became clear that additional information would need to be provided for the user to effectively set-up the product by the time they arrive on the homescreen so that the core functionality of the product was demonstrated. The core functionality being sound quality which would be demonstrated by a bluetooth connection where the user could play their own music, noise cancelling which would be enabled by the sound exposure graph, and finally purification which would be demonstrated by the controls alongside the air quality graph.</p>
+        <p><b>Iterate: </b>In order to solve key onboarding issues, I set out to learn how to implement app animations for Dyson Link, which did not have any major animations at the time. I arrived at the solution of using Lottie animations by discussing with the app developers, and looked to animate the current vector illustrations in After Effects with simple movements to emphasise each step. </p>
+        <p>To keep the animations focused and efficient, I aimed to have them loopable and no more than a few seconds long. Once I got the initial steps in place, I reviewed with the rest of the design team and then looked to enhance the animations with the graph editor to better create a more believable sense of weight and motion.</p>
+        <p><b>London Trial: </b> While implementing some of the key changes, the insights team started to trial externally with potential users. To ensure the trial used the most up to date app experience, the development team worked to get the researchers pre-production apps and connected prototypes. The only issue was that the onboarding which contained the newest animation had not been implemented and built yet, so I quickly updated my prototype and got it onto the same demo phone so that the set-up experience could be re-trialled alongside the rest of the product experience with help of the prompts from the researchers.</p>
+        <ul>
+          <li>Purification had mixed perceived efficacy</li>
+          <li>Positioning and design of the visor was a cause of frustration for many</li>
+          <li>App is practical and provides relevant feedback on controls and environment</li>
+        </ul>
+        <h2>Step 3: Iterations & Assets</h2>
+        <p><b>Alignment:</b> Content in the app needed aligning with the rest of the campaign, so I collaborated with commercial copywriters, packaging design, user guides and the web team to ensure we all shared the most up to date copy and imagery in each platform.</p>
+        <p><b>Audit: </b>When these final assets and animation files had been delivered, I conducted an end-to-end audit of the app with the test engineers in the team to ensure there was parity with the designed experience and the final implementation.</p>
+        <h2>Step 4: Post launch design sprint</h2>
+        <p><b>Problem: </b>People do not trust the Dyson Zone to protect them. This is exasperated by the current events of the New York Wildfires and the recent viral critical reviews for the product.</p>
+        <p>This prompted a quick collaborative design sprint to get the project moving. This began with consulting key stakeholders to gather requirements</p>
+        <p>User needs: </p>
+        <ul>
+          <li>I want to see what my product is currently protecting me from. So I can be more knowledgeable about the air I breathe in.</li>
+          <li>I want to see what the product has protected me from this session/today/week. So I can make decisions to reduce my risk of health problems.</li>
+          <li>I want to review the AQ data collected by my headset; because it is my data from my headset.</li>
+        </ul>
+        <p>Business needs: </p>
+        <ul>
+          <li>Tight time frames and to be able to deliver in time for the next development plan.</li>
+          <li>Promote the purification functionality of the Dyson Zone.</li>
+          <li>To increase usability of the AQ data pages.</li>
+        </ul>
+        <p>Technical considerations: </p>
+        <ul>
+          <li>Integrating Breezometer and sensor data may muddy the interface and AQ scales.</li>
+          <li>Small changes favourable due to limited development resources.</li>
+          <li>Breezometer API contract is uncertain, and also has some limitations with how data can be called and represented.</li>
+        </ul>
+        <p><b>Workshop:</b> I gathered several designers along with a few stakeholders involved in the product launch to explore some potential solutions for the problem statement and the current interface.</p>
+        <p>Solutions explored included: </p>
+        <ul>
+          <li>Additional Onboarding screens about benefits of purification and AQ sensors</li>
+          <li>Reworking the Breezometer page</li>
+          <li>Overhauling the landing page</li>
+          <li>Combining NO2 sensor data and AQ data into a single overall score.</li>
+          <li>Reworking data help screens</li>
+          <li>Replacing the graphs with more visually interesting representations of air quality data</li>
+        </ul>
+        <p>These key solutions were then reviewed with lead developers from both Android and iOS platforms to estimate complexity and feasibility. This was then measured against the perceived user and business benefit of each solution.</p>
+        <p><b>Review: </b>To align on a single solution, I presented each of the design proposals alongside some estimations, risks and opportunities of each of them to the senior stakeholders for the APP team and the Dyson Zone product. As a result of the review, we were able to align on the solution of reworking and expanding the Breezometer section on the landing page in order to raise awareness of the overall air quality in your area. This also included a revision to the copy to be more transparent for each pollutant that was being measured, due to the confusion of users seeing sensor data and assuming it was a holistic view of their air quality, and not just based on NO2.</p>
+        <p><b>Estimation: </b>This solution was sized as taking half a sprint for 2 teams (Android & iOS), and would require some testing on smaller devices due to increasing the size of the Breezometer section and reducing the size of the NO2 graph which also was the container for any in-line fault pop ups.</p>
+        <p><b>Delivery: </b>I collaborated with the development teams during this sprint to ensure we could quickly roll out the changes and test usability for all devices we supported due to the updated copy and size specifications.</p>
+
+      </div>
+    </div>
+
+    <!-- BigSleepCo -->
+    <div id="P5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P5')">&times;</span>
+        <h1>The Big Sleep Company</h1>
+        <h3>Objective</h3>
+        <p>To assess and improve The Big Sleep Company’s online presence and baby sleep consultancy platform in order to support their move from a physical manual business to be more online and autonomous.</p>
+        <h2>Step 1: Discovery</h2>
+        <p><b>Background:</b> To assess the current situation properly, I interviewed the co-owners at The Big Sleep Co. to understand how they felt about their platform and brand. I also got access to existing brand guidelines and source code for their website.</p>
+        <p>This allowed me to capture the Mission and Vision statements to grasp their core purpose and ensure any solutions aligned with their long-term goals.</p>
+        <h2>Step 2: Audit and research</h2>
+        <p><b>Audit</b>To identify any key usability issues or areas of attrition for the current platform solution, and build a SWOT analysis.</p>
+        <p>Strengths:</p>
+        <ul>
+          <li>Customers find a friendly down-to-earth consultant easier to trust with their children than someone overly clinical.</li>
+          <li>Locally based business appeals to customers.</li>
+          <li>Social media community of parents.</li>
+          <li>Word of mouth reviews received well.</li>
+        </ul>
+        <p>Weaknesses:</p>
+        <ul>
+          <li>Dependence on in-person consultations holds back business scalability.</li>
+          <li>Social media requires upfront time investment for inconsistent results.</li>
+          <li>Users are visiting the website without committing to a payment plan.</li>
+        </ul>
+        <p>Opportunities:</p>
+        <ul>
+          <li>Tiered pricing options to suit different budgets.</li>
+          <li>Variety of support options available.</li>
+        </ul>
+        <p>Threats:</p>
+        <ul>
+          <li>Competitors in the general UK area are becoming more well known.</li>
+          <li>With the cost of living crisis, pricing is much more competitive.</li>
+        </ul>
+        <p><b>Target audience: </b>Leveraging insights from their key social media platforms on Facebook and Instagram to better understand demographics, goals and behaviour.</p>
+        <p>This was also an opportunity to find out what the customer perception was for the Big Sleep Co. and how they engage with them at different touchpoints on the platform.</p>
+        <p><b>Personas: </b>From this I was able to draw up key persona’s based on their current user base and present them to the stakeholders to ensure they aligned to their understanding of their users, and also if it aligned with their target demographic.</p>
+        <p><b>Competitor analysis: </b>By comparing the Big Sleep Co. to similar businesses and seeing what their successes were we can see how the platform can become more competitive in the baby sleep consultation space, especially in the local area where in-person visits are possible.</p>
+        <p>Key competitors included:</p>
+        <ul>
+          <li>Little Dreams Consulting - Local</li>
+          <li>Chill Baby Sleep</li>
+          <li>No Milk Like Mamas</li>
+          <li>Little Ones</li>
+        </ul>
+        <h2>Step 3: Exploration</h2>
+        <p><b>Website redesign: </b>Making a list of changes to the current website to promote sales and engagement.</p>
+        <ul>
+          <li>Visual Hierarchy revised</li>
+          <li>Readability of certain elements. Multiple sections fail WCAG contrast accessibility checks.</li>
+          <li>Streamlining test and clickable content so the website is more glanceable, particularly on mobile.</li>
+        </ul>
+        <p><b>App concepts: </b>Exploring the direction of a mobile only platform, this would be the platform for paid content, you can see the proposed structure.</p>
+        <p>You can find the prototype <a href="https://www.figma.com/proto/ZUMpzzfRtvhICxSfKU6LeA/TheBigSleepCo?node-id=20-96&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A96 ">here.</a></p>
+        <p><b>Social media: </b>Exploring how to drive social media engagement, options include:</p>
+        <ul>
+          <li>Targeted ads using Facebook lookalike</li>
+          <li>Make use of widgets on website for social media accounts</li>
+          <li>Mass following competitors</li>
+          <li>Look into short free guides to help hook readers and drive the vision of the company being experts in the field</li>
+          <li>Podcasts and live conferences</li>
+          <li>Make use of referral codes and bonuses to lean on already effective direct word-of-mouth advertising</li>
+        </ul>
+        <h2>Step 4: Recommendations</h2>
+        <p><b>Presentation: </b>I presented a series of recommendations to improve their current platform, along with opportunities for scaling up the business. You can find the deck <a href="https://drive.google.com/file/d/12FMnseBHJIwJaLKWxhKGr_fp9afN_-uw/view">here.</a></p>
+        <p><b>Scaling up: </b>Growing a new target audience targetting a younger generation that is more present on online and mobile platforms. This could include expanding social media presence, building a bespoke app, multiple care packages for different budgets and levels of support.</p>
+        <p>Platform improvements:</p>
+        <ul>
+          <li>SEO and discoverability. (use of backlinks and social media widgets)</li>
+          <li>Streamline text and clickable assets</li>
+          <li>Value Proposition, emphasise the need for course content to enable/streamline in-person paid consultations</li>
+          <li>Statements and Case studies from previous customers</li>
+        </ul>
+        <p>Streamlining overall user investment flow: </p>
+        <ul>
+          <li><b>1. Content: </b>Gain user's interest from free content - Blog/Q&A</li>
+          <li><b>2. Lead magnet: </b>Gain user's contact - Mailing list.</li>
+          <li><b>3. Qualifier: </b>Gain user's time - Social media engagement.</li>
+          <li><b>4. Product: </b>Gain user's financial investment - Course purchase.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Burning reef -->
+    <div id="P6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P6')">&times;</span>
+      </div>
+    </div>
+
+    <!-- Panacea -->
+    <div id="P7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P4')">&times;</span>
+      </div>
+    </div>
+
+    <!-- Critical Eye -->
+    <div id="P8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P8')">&times;</span>
+      </div>
+    </div>
+
+    <!-- SAM-APP -->
+    <div id="P9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P9')">&times;</span>
+      </div>
+    </div>
+
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+        document.body.classList.add('modal-open');
+      }
+    
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+        document.body.classList.remove('modal-open');
+      }
+    
+      // Close the modal if the user clicks outside the modal content
+      window.onclick = function(event) {
+        const modals = document.getElementsByClassName('modal');
+        for (let modal of modals) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            document.body.classList.remove('modal-open');
+          }
+        }
+      }
+    </script>
+    
+    </body>
 </html>
