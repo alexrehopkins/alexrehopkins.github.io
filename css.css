@@ -1,11 +1,14 @@
 html {
     scroll-behavior: smooth;
     background-color: #101010;
+    font-family: "Inconsolata";
     color: azure;
+    padding: 7%;
   }  
 
 #intro a {
     color: rgb(192, 142, 239);
+    text-shadow: 0px 125px rgba(186, 124, 244, 0.5), 0px 250px rgba(186, 124, 244, 0.15);
 }
 
 a {
@@ -26,6 +29,7 @@ body.modal-open {
 #intro {
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
+    padding: 7%;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
@@ -35,7 +39,7 @@ body.modal-open {
 #scroller {
     position: absolute;
     bottom: 20px;
-    width: 99%;
+    width: 85%;
     text-align: center;
 }
 
@@ -47,14 +51,15 @@ body.modal-open {
     font-weight: 400;
     line-height: 250%;
     display: inline-block; /* Makes the link behave like a block, so padding works */
-    padding: 10px 20px; /* Adjust padding to control the size */
+    padding: 10px; /* Adjust padding to control the size */
     border: 2px solid aliceblue; /* Create the outline */
-    border-radius: 5px; /* Optional: Rounded corners */
+    border-radius: 50px; /* Optional: Rounded corners */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 #scroller a:hover {
     background-color: aliceblue; /* Change background color on hover */
+    box-shadow: 10px 10px rgb(192, 142, 239);
     color: #333; /* Change text color on hover */
     border-color: aliceblue; /* Ensure the outline remains visible */
 }
@@ -120,7 +125,7 @@ body.modal-open {
   }
 
   li::marker {
-    color: rgb(192, 142, 239);;
+    color: rgb(192, 142, 239);
   }
 
   /* Close Button */
