@@ -190,10 +190,12 @@ body.modal-open {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #00b3ff;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
   }
 
   .phonecontent:hover, .phonecontent:focus {
     background-color: rgb(192, 142, 239);
+    box-shadow: #ffffffe7 0px 0px 10px 5px;
   }
 
   .container {
