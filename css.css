@@ -4,7 +4,7 @@ html {
     font-family: "Inconsolata";
     color: azure;
     padding: 5%;
-
+    font-size: 16px;
 
 
     background: #101010;
@@ -33,7 +33,16 @@ html {
 
 a {
   color: rgb(192, 142, 239);
-  text-decoration: none;
+  text-decoration: underline rgba(192, 142, 239, 0);
+  text-underline-offset: 0em;
+  font-weight: 700;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+a:hover {
+  text-decoration: underline rgb(192, 142, 239);
+  text-underline-offset: 0.3em;
 }
 
 img {
@@ -51,8 +60,13 @@ body.modal-open {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 2vw;
     font-variation-settings: "wdth" 100;
     line-height: 0.5;
+}
+
+h3 {
+  font-size: 50px;
 }
 
 #intro a {
@@ -61,7 +75,7 @@ body.modal-open {
 
 #scroller {
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     width: 85%;
     text-align: center;
 }
@@ -72,7 +86,7 @@ body.modal-open {
     color: aliceblue;
     display: inline-block; /* Makes the link behave like a block, so padding works */
     padding: 10px; /* Adjust padding to control the size */
-    border: 2px solid aliceblue; /* Create the outline */
+    border: 5px solid aliceblue; /* Create the outline */
     border-radius: 50px; /* Optional: Rounded corners */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
@@ -84,23 +98,10 @@ body.modal-open {
     border-color: aliceblue; /* Ensure the outline remains visible */
 }
 
+
+
 #pagebreak {
     height: 100vh;
-}
-
-.ProjCard {
-    background-color: #505050;
-    margin-bottom: 10px;
-    padding: 10px;
-    cursor: pointer;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-}
-
-.ProjCard:hover {
-    background-color: gray;
 }
 
 /* Modal */
@@ -112,7 +113,7 @@ body.modal-open {
     top: 0;
     width: 100%;
     height: 120%;
-    background-color: rgba(0,0,0,0.7); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.219); /* Black with opacity */
     animation: fadeIn 0.5s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -124,6 +125,7 @@ body.modal-open {
     line-height: 1.5;
     margin-right: 5vw;
     background-color: #272727;
+    border: #000000 20px solid;
     padding: 50px;
     height: 89vh;
     overflow-y: auto;
@@ -136,11 +138,11 @@ body.modal-open {
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(-20%);
+      transform: scale(0);
     }
     to {
       opacity: 1;
-      transform: translateY(0%);
+      transform: scale(1);
     }
   }
 
@@ -172,6 +174,7 @@ body.modal-open {
     padding: 8px;
     border-radius: 54px;
     background-color: #000000;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
     cursor: pointer;
   }
 
@@ -190,12 +193,12 @@ body.modal-open {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #00b3ff;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
   }
 
-  .phonecontent:hover, .phonecontent:focus {
-    background-color: rgb(192, 142, 239);
-    box-shadow: #ffffffe7 0px 0px 10px 5px;
+  .phone:hover, .phone:focus {
+    box-shadow: #00000057 2px 5px 10px;
+    scale: 1.05;
   }
 
   .container {
@@ -221,4 +224,17 @@ body.modal-open {
     padding: 20px;
     border-radius: 10px;
     background-color: #000000e7;
+  }
+
+  .lottie-files {
+    position: absolute;
+    right: 0px;
+    top: 15vh;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  lottie-player {
+    width: 100%;
+
   }
