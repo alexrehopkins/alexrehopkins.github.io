@@ -39,6 +39,9 @@ a {
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
+span {
+  color: rgb(192, 142, 239);
+}
 
 a:hover {
   text-decoration: underline rgb(192, 142, 239);
