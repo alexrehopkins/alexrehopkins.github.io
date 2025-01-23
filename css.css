@@ -128,7 +128,7 @@ h3 {
     line-height: 1.5;
     margin-right: 5vw;
     background-color: #272727;
-    border: #000000 20px solid;
+    
     padding: 50px;
     height: 89vh;
     overflow-y: auto;
@@ -243,4 +243,18 @@ h3 {
   lottie-player {
     width: 100%;
 
+  }
+
+  .breakgap {
+    height: 130px;
+    padding-left: 85px;
+    margin-top: 80px;
+    margin-left: -60px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(147,120,159,0.2) 0%, rgba(133,116,137,.2) 8%, rgba(39,39,39,.2) 56%);
+  }
+
+  .breakgap h2 {
+    color: aliceblue;
+    align-self: flex-end;
   }
