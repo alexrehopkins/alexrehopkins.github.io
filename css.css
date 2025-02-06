@@ -70,6 +70,7 @@ body.modal-open {
 
 h3 {
   font-size: 50px;
+  margin-bottom: 5px;
 }
 
 #intro a {
@@ -132,6 +133,9 @@ h3 {
     padding: 50px;
     height: 89vh;
     overflow-y: auto;
+    scrollbar-color: rgb(192, 142, 239) transparent;
+    scrollbar-width: thin;
+
   }
 
   .modal-content b {
@@ -156,9 +160,9 @@ h3 {
   /* Close Button */
   .close {
     color: #aaa;
-    float: right;
-    translate: -33px 0px;
-    font-size: 28px;
+    right: 5vw;
+    translate: -25px -50px;
+    font-size: 48px;
     font-weight: bold;
     position: fixed;
   }
@@ -226,7 +230,7 @@ h3 {
   .phone p {
     color: white;
     font-weight: 600;
-    font-size: larger;
+    font-size: x-large;
     padding: 20px;
     border-radius: 10px;
     background-color: #000000e7;
@@ -257,4 +261,19 @@ h3 {
   .breakgap h2 {
     color: aliceblue;
     align-self: flex-end;
+  }
+
+  .headerImage {
+    background-color: #191f21;
+    width: 150px;
+    height: 300px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  .header {
+    background: rgba(147,120,159,0.2);
+    display: flex;
   }
