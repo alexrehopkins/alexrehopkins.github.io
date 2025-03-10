@@ -54,9 +54,9 @@
     </div>
 
     <div class="phone" onclick="openModal('P2')">
-      <div class="phonecontent" style="background-image: url('images/dyson_innovation/card.png');">
+      <div class="phonecontent" style="background-image: url('images/dyson_eq/card.png');">
         <div class="notch"></div>
-        <p>Digital Audio Innovations</p>
+        <p>Dyson OnTrac Custom EQ</p>
       </div>
     </div>
 
@@ -88,19 +88,17 @@
       </div>
     </div>
 
-    <div class="phone" onclick="openModal('P7')">
-      <div class="phonecontent" style="background-image: url('images/panacea/card.png');">
-        <div class="notch"></div>
-        <p>Panacea Live @ Prevail</p>
-      </div>
-    </div>
-
-    
-
     <div class="phone" onclick="openModal('P9')">
       <div class="phonecontent"  style="background-image: url('images/sam_app/card.png');">
         <div class="notch"></div>
         <p>SAM-APP for Anxiety</p>
+      </div>
+    </div>
+    
+    <div class="phone" onclick="openModal('P7')">
+      <div class="phonecontent" style="background-image: url('images/panacea/card.png');">
+        <div class="notch"></div>
+        <p>Panacea Live @ Prevail</p>
       </div>
     </div>
 
@@ -207,14 +205,14 @@
     </div>
 
     <!-- Innovation -->
-    <div id="P2" class="modal">
+    <div id="P0" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('P2')">&times;</span>
         <div class="header">
           <div class="headerImage" style="background-image: url('images/dyson_innovation/card.png');"></div>
           <div class="headerContent">
           <h1>Digital Audio Innovations</h1>
-          <p>January 2024 - Current</p>
+          <p>June 2024 - Current</p>
           <p><b>Client: </b>Dyson Audio Innovation team</p>
           </div>
         </div>
@@ -254,6 +252,76 @@
         </ul>
         <p><b>Solution: </b>There were a few directions the desired concept could be achieved. Either with a 3D model that would be rendered in-app, or creating the visual programmatically with code. I used my experience with Procedural graphics generation and 3D modelling to explore both options, and after reviewing both decided to use the procedural generated 3D graphics using shaders and GLSL code. From collaborating with the App team, we realised we were able to render this on both mobile platforms with the use of Metal and GL.</p>
         <p><b>Outcome: </b>A dynamically rendered shader could display the data within the app for the future feature. By creating it as a shader it could operate as a module that the delivery team could adopt easily without too much refactoring and rewriting, which in turn removes a lot of the risk associated with the feature. Onboarding prompts are used to teach users about the feature.</p>
+      </div>
+    </div>
+
+    <!-- Custom EQ -->
+    <div id="P2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('P2')">&times;</span>
+        <div class="header">
+          <div class="headerImage" style="background-image: url('images/dyson_eq/card.png');"></div>
+          <div class="headerContent">
+          <h1>Dyson OnTrac - Custom EQ</h1>
+          <p>January 2024 - June 2024</p>
+          <p><b>Client: </b>Dyson Audio team</p>
+          </div>
+        </div>
+        <h3>Background</h3>
+        <p>Following the launch of the Dyson OnTrac there was an opportunity to gather feedback for future innovations and updates to continuously improve the overall app and product experience.</p>
+        <h3>Objective</h3>
+        <p>To gather key features to improve upon for the Dyson Headphone app experience, to ensure it meets the expectations of a premium headphone feature set.</p>
+        <div class="breakgap">
+        <h2 class="step1">Step 1: Gather requirements</h2></div>
+        <p><b>Goal:</b> To identify common themes in online feedback and understand what the pain points were.</p>
+        <p><b>Process:</b> Using a combination of desk research to see online feedback and app survey feedback to our current owners we were able to identify key features that were lacking.</p>
+        <img src="images/dyson_eq/Feedback.png" alt="Screenshots of online feedback commenting on the lack of a customisable equaliser">
+        <p><b>Outcome:</b> The key pain points included:
+        <ul>
+          <li>Not being able to fine tune and customise the equaliser</li>
+          <li>Issues with bluetooth connection</li>
+          <li>Complaints about the shop menu</li>
+        </ul>
+        <p>I then set out to run an initial cross-team workshop to quickly ideate where there might be potential opportunities from these issues with the rest of the team.</p>
+        <div class="breakgap">
+        <h2 class="step2">Step 2: Scope</h2></div>
+        <p><b>Scope: </b> From discussing initial ideas from the workshop with the engineers, we were able to park most connectivity related improvements due to chipset limitations, and after validating the direction with product management, we instead focused on improving the equaliser experience. We were also able to delegate any cross-category UI work to the design system team including the feedback about the overbearing shop button.</p>
+        <p><b>Research: </b> At this point it was clear from reviews online that there was a demand for custom equalisers, but it was necessary to understand what exactly the requirements of the experience looked like and to what degree it could be enhanced from the current offering.</p>
+        <img src="images/dyson_eq/EQresearch.png" alt="Graphic of competitor equaliser editors present in premium headphone apps">
+        <p>I sent out a study using UserTesting.com to get users that used premium headphones to show us their equaliser experience, and describe how they went about customising it, and whether there were any key frustrations.</p>
+        <p><b>Outcome:</b> The themes from the research included:</p>
+        <ul>
+          <li>EQ was seen as a way to holistically optimise the music listening experience, describing it as a way to make corrections to their headphones to get the most out of them.</li>
+          <li>EQ was not changed mid listening session, with the majority of users exploring the EQ customiser and options during set-up and then forgetting about them later.</li>
+        </ul>
+        <p>Key pain points: </p>
+        <ul>
+          <li>Frequently customising the EQ was frustrating, and felt it was not worth the time to tailor it between music sessions. There was a desire to have it automated.</li>
+          <li>Not being able to save EQ's was a major issue.</li>
+          <li>Lack of understanding about how to effectively customise the EQ, and described the process as aimlessly experimenting with options.</li>
+          <li>For participants that felt confident customising EQ, they felt there was a lack of granularity in customisation options.</li>
+          <li>Some participants felt they trusted the default presets more, and felt they were sufficient for their use, but did report that they would like to have the option to customise.</li>
+        </ul>
+        <div class="breakgap">
+        <h2 class="step3">Step 3: User interface</h2></div>
+        <p><b>Ideation: </b>I regrouped with the design team to run a co-design workshop to identify potential UI layouts. These included how we displayed the frequency bands, whether they were displayed linearly as sliders, or on a circular path like the Nothing Headphones or with another more abstract method.</p>
+        <p><b>Process: </b>When the team had agreed on a 5 band equaliser with sliders, I had mocked up an interactive prototype in Figma to review with the team head and product management.</p>
+        <img src="images/dyson_eq/EQ.png" alt="Graphic of the in-app equaliser customisation tool">
+        <p><b>Outcome: </b>The review aligned our vision, but it was necessary to share progress with the Dyson Leadership Group, we were unfortunately unable to get a review slot so I instead took the prototype to AfterEffects to record a short concept video that could effectively demonstrate the interactions of the feature and what sort of effect it would have on audio which we had been unable to demonstrate with a Figma prototype.</p>
+        <p>Within a few days the concept video was reviewed amongst other features and signed off by the leadership group, and it was time to deliver the feature.</p>
+        <div class="breakgap">
+        <h2 class="step4">Step 4: Validation and Delivery</h2></div>
+        <p><b>Design System: </b>The concepts had been reviewed with the design system team, and it was decided not to be added as a reusable component due to be limited to audio products, they were however able to aid on defining the colours used and the padding of the interface to ensure it aligned with the visual language of the rest of the app.</p>
+        <p><b>Accessiblity: </b>In order to ensure the interface was accessible for all users, I then looked to define voice over tags and interactions on the new interface, as voice over would not be inherited from the component library due to it being a bespoke component.</p>
+        <img src="images/dyson_eq/Voiceover.png" alt="Graphic of voiceover documentation for development hand-off">
+        <p>The key challenge here was ensuring users would be able to both tap on the sliders with a screen reader to understand their position, and also be able to slide them up and down easily.</p>
+        <p><b>Delivery: </b>I worked with the development team to implement the feature as part of their scrum team, helping to ensure the feature was delivered on time and that all edge cases were covered, such as disconnected and error states of the EQ editor.</p>
+        <p><b>Outcome: </b>The feature was successfully delivered on time and was able to be included in a release of the MyDyson app with a core customisation functionality that can be easily scaled in the future.</p>
+        <ul>
+          <li>The update resulted in a ~15% increase in active users over the course of the release week, reaching 21.5k Dyson Ontrac users at peak usage.</li>
+          <li>Approximately ~20% of active users who updated had reported using the Custom EQ feature.</li>
+          <li>Recent app reviews for the feature contained ~95% positive sentiment, with multiple headphone specialist reviews updating their original product pro/con lists to include the feature.</li>
+        </ul>
       </div>
     </div>
 
